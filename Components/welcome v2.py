@@ -3,7 +3,7 @@ import random
 from random import randint
 
 # List of random names
-names = ["Luka", "kade", "Jayden", "Jason", "Dannel", "Daniel", "Rory", "Antonie", "Lucas", "Ben"]
+names = ["Luka", "kade", "Jayden", "Jason", "Max verstappen", "Michael Schumacher", "Rory", "Antonie", "Lucas", "Charles Leclerc"]
 
 def welcome():
     '''
