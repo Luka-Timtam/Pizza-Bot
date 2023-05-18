@@ -1,19 +1,29 @@
 # Menu so that user can choose either pickup or delivery
 
+# Bugs - need to make it so that it only accpets 1 or 2
+
 print ("Is your order for pickup or delivery?")
 
 print ("For pickup please enter 1")
 print ("For delivery please enter 2")
 
-delivery = int(input())
 
-if delivery == 1:
-    print ("Pickup")
 
-elif delivery == 2:
-    print ("Delivery")
 
-else:
-    print ("That was not a valid input")
 
-#31.52 video
+while True:
+    try: 
+        delivery = int(input("Please enter a number: "))
+        if delivery >= 1 and delivery <= 2:
+            if delivery == 1:
+                print ("Pickup")
+                break
+
+            elif delivery == 2:
+                print ("Delivery")
+                break
+        else:
+            print ("The number must be 1 or 2")
+    except ValueError:
+        print ("That is not a valid number")
+        print ("Please enter 1 or 2")
