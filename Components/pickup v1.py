@@ -1,4 +1,4 @@
-
+# Bugs - accepts blank input
 
 print("Please enter the pickup information")
 
@@ -7,3 +7,7 @@ name = input("Please enter your name")
 
 
 #customer phone number
+phone = input("Please enter your phone number")
+
+print (name)
+print (phone)
