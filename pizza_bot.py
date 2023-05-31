@@ -1,13 +1,21 @@
 # Pizza Bot Program
-
 import random
 from random import randint
 
 # List of random names
 names = ["Luka", "kade", "Jayden", "Jason", "Max verstappen", "Michael Schumacher", "Rory", "Antonie", "Lucas", "Charles Leclerc"]
 
-# Welcome message with random name
+# validates inputs to check if they are blank
+def not_blank(question): 
+    valid = False
+    while not valid:
+        response = input(question)
+        if response != "":
+            return response
+        else:
+            print("This can not be blank")
 
+# Welcome message with random name
 def welcome():
     '''
     Purpose: To generate a random name from the list and print out 

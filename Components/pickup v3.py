@@ -26,5 +26,3 @@ while not valid:
         print("Sorry this can not be blank")
 
 print (customer_details)
-
-#lesson 12 8.21
